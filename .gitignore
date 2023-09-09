@@ -1,0 +1,14 @@
+obj
+.vs
+Release
+Debug
+*.log
+*.db
+*.user
+*.pdb
+ipch
+bin
+Log
+
+log4cpp/
+lib/
