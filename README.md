@@ -83,7 +83,7 @@
 
 ### 架构设计
 
-![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/DataServer-UML.png)
+![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/DataServer-UML.jpg)
 
 简述如下：
 
@@ -110,7 +110,7 @@
 
 ### 架构设计
 
-![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/StrategyServer-UML.png)
+![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/StrategyServer-UML.jpg)
 
 ## 前端
 
