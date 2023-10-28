@@ -47,10 +47,11 @@
 
 #### GetData
 
-发送数据：
+一次只能对单表进行查询。发送：
 
 ```json
 {
+"table: ,
 "code": [],
 "start_date": "2015-01-01",
 "end_date": "2021-01-01", 
@@ -69,7 +70,7 @@
 ### 实现
 
 1. 每种资产对应一张表，目前只支持国内股票，则表名为`cn-stock`，如果以后加入新的资产，就增加新的表。  
-2. 启动时会检验数据完整性，如果不完整，就从start_date开始获取数据。然后周期性地刷新数据，这里使用libcron注册周期任务。
+2. 启动时会检验数据完整性，如果不完整，就从`start_date`开始获取数据。然后周期性地刷新数据，这里使用libcron注册周期任务。
 1. 使用akshare获取数据，需要用boost.python来进行交互。
 
 ### 架构设计
@@ -77,9 +78,10 @@
 ![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/DataServer-UML.png)
 
 简述如下：
-2. DBManager用于写数据到数据库、进行查询。
-1. DataMantainer用于维护数据完整性、刷新数据，使用单独的线程运行。
-1. DataBridge通过boost.python来与akshare进行交互获取数据。
+2. `DBManager`用于写数据到数据库、进行查询。
+1. `DataMantainer`用于维护数据完整性、刷新数据，使用单独的线程运行。
+1. `DataBridge`通过`boost.python`来与`akshare`进行交互获取数据。
+1. 假如不考虑数据刷新与完整性，则只需要`DBManager`即可。
 
 
 ## 策略服务器
