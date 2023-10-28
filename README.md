@@ -82,8 +82,8 @@
 
 1. `"config"`：json配置文件。
 2. `"ID"`：UUID，此id在上传策略时生成。
-1. `"CurrentTime"`：策略已经遍历的最新时间点。
-1. `"WorkDir"`:完整的工作目录。
+1. `"current_time"`：策略已经遍历的最新时间点。
+1. `"working_dir"`:完整的工作目录。
 
 运行环境、策略dll构成了完整、独立的策略实体，切换不同的运行环境可以得到不同的策略。服务器也可以提供一套API来支持访问其它的策略，以实现组合策略。
 
@@ -91,4 +91,4 @@
 
 ### UI设计
 
-![Alt Text](Doc/UI Design.jpg)
+![](Doc/UI Design.jpg)
