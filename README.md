@@ -78,6 +78,7 @@
 ![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/DataServer-UML.png)
 
 简述如下：
+
 2. `DBManager`用于写数据到数据库、进行查询。
 1. `DataMantainer`用于维护数据完整性、刷新数据，使用单独的线程运行。
 1. `DataBridge`通过`boost.python`来与`akshare`进行交互获取数据。
