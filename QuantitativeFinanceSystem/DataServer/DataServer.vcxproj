@@ -132,7 +132,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DataServer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\DataServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\DataServer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
