@@ -72,6 +72,15 @@
 2. 启动时会检验数据完整性，如果不完整，就从start_date开始获取数据。然后周期性地刷新数据，这里使用libcron注册周期任务。
 1. 使用akshare获取数据，需要用boost.python来进行交互。
 
+### 架构设计
+
+![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/DataServer-UML.png)
+
+简述如下：
+2. DBManager用于写数据到数据库、进行查询。
+1. DataMantainer用于维护数据完整性、刷新数据，使用单独的线程运行。
+1. DataBridge通过boost.python来与akshare进行交互获取数据。
+
 
 ## 策略服务器
 
