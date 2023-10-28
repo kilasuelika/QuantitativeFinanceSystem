@@ -100,6 +100,10 @@
 
 运行环境、策略dll构成了完整、独立的策略实体，切换不同的运行环境可以得到不同的策略。服务器也可以提供一套API来支持访问其它的策略，以实现组合策略。
 
+### 架构设计
+
+![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/StrategyServer-UML.png)
+
 ## 前端
 
 ### UI设计
