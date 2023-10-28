@@ -91,4 +91,4 @@
 
 ### UI设计
 
-![](Doc/UI Design.jpg)
+![](https://github.com/kilasuelika/QuantitativeFinanceSystem/blob/main/Doc/UI%20Design.jpg)
