@@ -12,3 +12,6 @@ Log
 
 log4cpp/
 lib/
+CMakeFiles/
+libcron.dir/
+out/x64/

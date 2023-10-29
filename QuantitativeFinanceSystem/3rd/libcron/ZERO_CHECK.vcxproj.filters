@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\CMakeFiles\ea5871d5a77e7f5340e0a8888b9eb4f0\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E7E6D403-DF9A-33FD-976D-D9833A2D1CB4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
