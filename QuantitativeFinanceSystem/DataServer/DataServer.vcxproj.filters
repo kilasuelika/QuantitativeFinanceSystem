@@ -21,9 +21,15 @@
     <ClCompile Include="src\DataServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\DBManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\DataServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DBManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
