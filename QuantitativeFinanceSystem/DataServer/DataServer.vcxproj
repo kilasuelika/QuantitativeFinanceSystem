@@ -73,7 +73,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)..\Release\DataServer</OutDir>
-    <IncludePath>$(SolutionDir)\include;$(SolutionDir)\include\3rd_party;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>C:\vcpkg\installed\x64-windows\include\python3.11;$(SolutionDir)\include;$(SolutionDir)\include\3rd_party;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\vcpkg\installed\x64-windows\lib\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -138,6 +139,8 @@
     <ClCompile Include="src\DBManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\AKShareWrapper.h" />
+    <ClInclude Include="include\DataBridge.h" />
     <ClInclude Include="include\DataServer.h" />
     <ClInclude Include="include\DBManager.h" />
   </ItemGroup>

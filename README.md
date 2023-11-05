@@ -38,6 +38,13 @@
 .\vcpkg install boost:x64-windows eigen3:x64-windows sqlitecpp:x64-windows cpprestsdk:x64-windows fmt:x64-windows websocketpp:x64-windows spdlog:x64-windows
 ```
 
+### Python 3.11
+
+需要安装软件包：
+```cmd
+pip instal akshare
+```
+
 ## 数据服务器
 
 ### 配置

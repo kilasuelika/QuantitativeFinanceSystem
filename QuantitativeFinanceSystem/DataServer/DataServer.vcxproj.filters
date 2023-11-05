@@ -32,5 +32,11 @@
     <ClInclude Include="include\DBManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\DataBridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AKShareWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
