@@ -4,15 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataServer", "DataServer\DataServer.vcxproj", "{FBCD1244-148A-486F-90D1-2148F23990CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{528E6B17-6B89-30AB-A210-D92363ED6ED8} = {528E6B17-6B89-30AB-A210-D92363ED6ED8}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{54FE9319-BD01-4A4C-94A1-3C770977A5E6}"
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
+		..\Release\DataServer\DataServer-config.json = ..\Release\DataServer\DataServer-config.json
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcron", "3rd\libcron\libcron.vcxproj", "{528E6B17-6B89-30AB-A210-D92363ED6ED8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{F2DCFBC2-B613-4C17-8337-64A544D97AEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_boost_python", "test_boost_python\test_boost_python.vcxproj", "{EFC87ABC-23B6-423E-A571-FF0E087C967F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +80,22 @@ Global
 		{F2DCFBC2-B613-4C17-8337-64A544D97AEE}.RelWithDebInfo|x64.Build.0 = Release|x64
 		{F2DCFBC2-B613-4C17-8337-64A544D97AEE}.RelWithDebInfo|x86.ActiveCfg = Release|Win32
 		{F2DCFBC2-B613-4C17-8337-64A544D97AEE}.RelWithDebInfo|x86.Build.0 = Release|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Debug|x64.ActiveCfg = Debug|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Debug|x64.Build.0 = Debug|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Debug|x86.ActiveCfg = Debug|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Debug|x86.Build.0 = Debug|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.MinSizeRel|x64.ActiveCfg = Debug|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.MinSizeRel|x64.Build.0 = Debug|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.MinSizeRel|x86.ActiveCfg = Debug|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.MinSizeRel|x86.Build.0 = Debug|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Release|x64.ActiveCfg = Release|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Release|x64.Build.0 = Release|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Release|x86.ActiveCfg = Release|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.Release|x86.Build.0 = Release|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.RelWithDebInfo|x86.ActiveCfg = Release|Win32
+		{EFC87ABC-23B6-423E-A571-FF0E087C967F}.RelWithDebInfo|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

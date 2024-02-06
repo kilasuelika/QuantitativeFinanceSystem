@@ -19,12 +19,20 @@
 
 ### 设计考量
 
-1. 不针对高性能或者实时交易。这主要是考虑使用的是开源数据，不希望给服务器带来过大的压力。但也需要为以后的扩展留下余地。目前计划以小时为周期。
+1. 不针对高性能或者实时交易。这主要是考虑使用的是开源数据，不希望给服务器带来过大的压力。但也需要为以后的扩展留下余地。目前计划以天为周期。
 1. 需要支持多策略独立运行。
 1. 需要支持策略的启动与停止、切换账户，比如实盘交易与回测交易使用不同的账户，通过切换账户来允许用户随时将策略部署到实盘。这可以使用Context模式来实现。实盘交易必然涉及某些身份信息，这些信息应该让用户在自己的策略中编写，不应该让服务器知道。对于策略服务器来说，是不是实盘没有关系，可以考虑给策略当前的账户提供一个列表，允许用户切换账户，需要由用户覆盖函数在其中进行注册，由服务器直接调用。
 1. 数据持久化，比如策略服务器停止后，需要能下一次启动后继续运行。
 
 ## 依赖
+
+### Python 3.11
+
+如果只运行，则只需要安装python3.11、设置环境变量`PYTHONHOME`，并安装软件包：
+```cmd
+pip instal akshare
+```
+以下的依赖只针对编译项目。
 
 ### Visual Studio 2022
 
@@ -32,18 +40,12 @@
 
 ### Vcpkg
 
-需要安装的包：
+需要设置环境变量`VCPKG_ROOT`，安装软件包：
 
 ```cmd
 .\vcpkg install boost:x64-windows eigen3:x64-windows sqlitecpp:x64-windows cpprestsdk:x64-windows fmt:x64-windows websocketpp:x64-windows spdlog:x64-windows
 ```
 
-### Python 3.11
-
-需要安装软件包：
-```cmd
-pip instal akshare
-```
 
 ## 数据服务器
 
@@ -54,8 +56,10 @@ pip instal akshare
 ```json
 {
     "port": 8080,
-    "db_path": "data.db",
-    "start_date":  "2010-01-01"
+    "db_path": "data/data.db",
+    "start_date":  "2010-01-01",
+    "codes": ["000001", "000002"],
+    "fields": [""]
 }
 ```
 
@@ -106,7 +110,12 @@ pip instal akshare
 1. 使用akshare获取数据，需要用boost.python来进行交互。
 1. 启动时数据完整性校验：取得交易日历后，遍历每个时间点检验数据库中是否存在对应数据，如果不存在就调用DataBridge来获取并更新进数据库。
 1. 考虑支持多数据源与数据源切换。目前通过配置来指定数据源，由DataBridge进行读取。
-
+1. 启动过程：
+    1. 读取配置文件。
+    1. 初始化DataBridge。
+    1. 初始化DBManager。
+    1. 启动DataMantainer任务。
+    1. 启动Websocket服务器。
 
 ## 策略服务器
 

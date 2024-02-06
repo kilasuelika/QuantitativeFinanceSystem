@@ -18,24 +18,33 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\DataServer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="include\AKShareWrapper.ixx">
+      <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\DBManager.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\include\Util.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DataDef.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DataMantainer.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DataSource.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DBManager.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DataBridge.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\DataServer.ixx">
+      <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\DataServer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DBManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\DataBridge.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\AKShareWrapper.h">
+    <ClInclude Include="..\include\StrMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

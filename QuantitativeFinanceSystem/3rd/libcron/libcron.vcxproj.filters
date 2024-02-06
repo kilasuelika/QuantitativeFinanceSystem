@@ -1,50 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\src\CronClock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\src\CronData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\src\CronRandomization.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\src\CronSchedule.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\src\Task.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="$(ProjectDir)\src\CronClock.cpp" />
+    <ClCompile Include="$(ProjectDir)\src\CronData.cpp" />
+    <ClCompile Include="$(ProjectDir)\src\CronRandomization.cpp" />
+    <ClCompile Include="$(ProjectDir)\src\CronSchedule.cpp" />
+    <ClCompile Include="$(ProjectDir)\src\Task.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\Cron.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\CronClock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\CronData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\CronRandomization.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\CronSchedule.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\DateTime.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\Task.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\include\libcron\TimeTypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="F:\KnowledgeCenter\Connect\PT\Projects\QuantitativeFinanceSystem\QuantitativeFinanceSystem\3rd\libcron\CMakeLists.txt" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\Cron.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\CronClock.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\CronData.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\CronRandomization.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\CronSchedule.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\DateTime.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\Task.h" />
+    <ClInclude Include="$(ProjectDir)\include\libcron\TimeTypes.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

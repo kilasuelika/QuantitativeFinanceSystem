@@ -1,9 +1,9 @@
-#include "../include/DataServer.h"
+#include <spdlog/spdlog.h>
+#include <websocketpp/client.hpp>
+#include <websocketpp/config/asio_no_tls.hpp>
+#include <websocketpp/server.hpp>
 
-bool DataServer::Run(const std::string& configfile) {}
-void DataServer::RegisterListener(websocketpp::connection_hdl hdl) {}
-void DataServer::on_open(websocketpp::connection_hdl hdl) {}
-void DataServer::on_close(websocketpp::connection_hdl hdl) {}
-void DataServer::on_message(websocketpp::connection_hdl hdl,
-    SocketServer::message_ptr msg) {
-}
+module DataServer;
+
+import Util;
+
